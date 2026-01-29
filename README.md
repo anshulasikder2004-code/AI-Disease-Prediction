@@ -1,35 +1,73 @@
-AI Disease Prediction System (Ongoing Project):
+This project is an AI-driven digital triage platform that assesses patient symptoms, predicts possible diseases and guides patients to appropriate care pathways. (ongoing)
+It is designed for low-resource settings, aiming to reduce hospital overcrowding, improve access to timely care and empower patients with actionable guidance.
 
-This project predicts diseases based on user-reported symptoms using a machine learning model. 
+Current Work (Implemented):
 
-What’s done (current state):
+1.Symptom-based disease prediction using Random Forest Classifier
 
-1.Collected symptom-disease dataset and cleaned it (removed empty/extra spaces).
+2.Backend: Python, scikit-learn, pandas
 
-2.Encoded symptoms into a one-hot feature matrix.
+3.Web interface: Streamlit
 
-3.Trained a Random Forest Classifier on the dataset.
+4.Model artifacts saved as .pkl files (disease model, label encoder, feature columns)
 
-4.Built a Streamlit interface where users can select symptoms and get disease predictions.
+Future Work / Planned Features:
 
-5.Saved model, label encoder, and feature columns as .pkl files for reuse.
+1️⃣ Risk Stratification
 
-Tools & Technology used:
+Categorize patients into Low / Medium / High severity
 
-1.Python, pandas, scikit-learn, joblib
+Automatically flag urgent cases for immediate care
 
-2.Streamlit for UI
+Display risk scores with visual indicators
 
-3.Git & GitHub for version control
+2️⃣ Referral Guidance
 
-Future Work:
+Suggest the most appropriate facility (clinic, hospital, specialist)
 
-1.Expand dataset with more symptoms and diseases.
+Provide guidance based on patient location & facility availability
 
-2.Add symptom severity and duration to improve accuracy.
+Prioritize urgent referrals to reduce ER overload
 
-3.Integrate with health APIs for real-time monitoring.
+3️⃣ Resource-Aware Recommendations
 
-4.Deploy a web app for hospitals, clinics, and general users.
+Adjust recommendations based on local hospital capacity & nearby clinics
 
-5.Experiment with ensemble or deep learning models for better performance.
+Suggest home care or telemedicine for mild cases
+
+Optimize patient flow and reduce unnecessary hospital visits
+
+4️⃣ Health Equity Features
+
+Support local language interfaces (Bangla)
+
+Accessible for underserved populations with limited health literacy
+
+Include guidance for informal healthcare providers (pharmacies, village doctors)
+
+5️⃣ Advanced AI / ML Features
+
+Expand symptom dataset for better prediction accuracy
+
+Implement NLP-based symptom extraction from patient text
+
+Explore multi-label disease prediction for complex cases
+
+Use model explainability (SHAP / LIME) for patient & doctor understanding
+
+6️⃣ Mobile-Friendly & Scalable Interface
+
+Deploy as mobile-first web app
+
+Allow patients to input symptoms easily on phones
+
+Provide real-time predictions without heavy computational load
+
+7️⃣ Integration with Healthcare Systems
+
+Connect with public hospital databases for live updates
+
+Enable early warning alerts for hospitals on high-risk patients
+
+Provide analytics dashboard for hospital administrators
+
